@@ -92,7 +92,7 @@ private:
     std::vector<QRCode> allCodes;
 
     // Constants used for line fitting.
-    static const int fitType = CV_DIST_FAIR;
+    static const int fitType = cv::DIST_FAIR;
     static const int fitReps = 0.01;
     static const int fitAeps = 0.01;
 

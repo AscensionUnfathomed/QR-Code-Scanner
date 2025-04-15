@@ -1,7 +1,7 @@
 #include <iostream>
 #include "../Header/CodeFinder.hpp"
 #include "../Header/ImageBinarization.hpp"
-#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/highgui.hpp>
 #include "../Header/Filesystem.hpp"
 
 using namespace std;
@@ -64,7 +64,7 @@ Mat CodeFinder::find() {
 
 	cout << "Converting image to binary image..." << endl;
 	Mat grayscaleImage;
-	cvtColor(image, grayscaleImage, CV_BGR2GRAY);
+	cvtColor(image, grayscaleImage, COLOR_BGR2GRAY);
 
 	ImageBinarization binarizer;
 	int thresholdMethod = -1;
@@ -209,7 +209,7 @@ void CodeFinder::findAllContours() {
 	image /= 255;
 	allContours.clear();
 	hierarchy.clear();
-	findContours(image, allContours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_NONE);
+	findContours(image, allContours, hierarchy, RETR_TREE, CHAIN_APPROX_NONE);
 }
 
 /**
@@ -551,7 +551,7 @@ bool CodeFinder::findMergedLines(QRCode &code) {
  * \param code Code containing merged lines.
  */
 void CodeFinder::findCorners(QRCode &code) {
-	code.corners = Mat(4, 4, DataType<Point2f>::type);
+	code.corners = Mat(4, 4, CV_32FC2);
 	for (int a = 0; a < code.hLines.size(); a++) {
 		for (int b = 0; b < code.vLines.size(); b++) {
 			Point2f result;
@@ -977,7 +977,7 @@ Mat CodeFinder::drawAllContours() {
 cv::Mat CodeFinder::drawAllContoursBinarized()
 {
 	Mat image = binarizedImage.clone();
-	cvtColor(image, image, CV_GRAY2BGR);
+	cvtColor(image, image, COLOR_GRAY2BGR);
 	return drawContours(allContours, &image);
 }
 
@@ -1077,7 +1077,7 @@ vector<Mat> CodeFinder::drawExtractedCodeGrids() {
 		if (!code.extractedImage.data)
 			continue;
 
-		cvtColor(code.extractedImage, image, CV_GRAY2BGR);
+		cvtColor(code.extractedImage, image, cv::COLOR_GRAY2BGR);
 		for (int a = 0; a < 4; a++) {
 			for (int b = 0; b < 4; b++) {
 				circle(image, code.transformedCorners.at<Point2f>(a, b), 3, Scalar(0, 0, 255), 2);
@@ -1290,7 +1290,7 @@ void CodeFinder::saveDrawCustomTo(const string& folder, const string&imageFilePa
 
 
 	Mat grayImage;
-	cvtColor(originalImage, grayImage, CV_BGR2GRAY);
+	cvtColor(originalImage, grayImage, COLOR_BGR2GRAY);
 	debugFileName = fs.toFileName(imageFilePath) + "_0___GRAY___" + fs.toExtension(imageFilePath, true);
 	fs.saveImage(fs.toPath(folder, debugFileName), grayImage);
 

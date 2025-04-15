@@ -47,7 +47,7 @@ bool ImageBinarization::isLightingUneven() {
  * \brief Calculate global binarization.
  */
 void ImageBinarization::computeGlobalThreshold() {
-	threshold(blurredImage, binarizedImage, threshold_value, max_BINARY_value, CV_THRESH_OTSU);
+	threshold(blurredImage, binarizedImage, threshold_value, max_BINARY_value, THRESH_OTSU);
 }
 
 /**
@@ -96,7 +96,6 @@ void ImageBinarization::printThresholdMethod(int thresholdMethod) {
  * \return The binarized image.
  */
 Mat ImageBinarization::run(Mat image, int thresholdMethod) {
-
 	this->image = image;
 	computeSmoothing();
 	createHistogram();

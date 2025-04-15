@@ -1,5 +1,5 @@
 #include "../Header/Filesystem.hpp"
-#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/highgui.hpp>
 
 
 #ifdef _WIN32
@@ -13,7 +13,7 @@
 using namespace std;
 
 cv::Mat FileSystem::loadImage(const string &fullPath) {
-    cv::Mat image = cv::imread(fullPath, CV_LOAD_IMAGE_COLOR);
+    cv::Mat image = cv::imread(fullPath, cv::IMREAD_COLOR);
     if (!image.data)
         throw exception(); // Unable to load file.
     return image;

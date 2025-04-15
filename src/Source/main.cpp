@@ -273,7 +273,7 @@ float evaluate(const string &source, const Mat &outputImage) {
 	try
 	{
 		groundTruthImage = FileSystem::loadImage(groundTruthImagePath);
-		cvtColor(groundTruthImage, groundTruthImage, CV_BGR2GRAY);
+		cvtColor(groundTruthImage, groundTruthImage, cv::COLOR_BGR2GRAY);
 	}
 	catch (...)
 	{

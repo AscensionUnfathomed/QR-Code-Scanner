@@ -1,6 +1,6 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/highgui.hpp>
 #include <opencv2/video/tracking.hpp>
 
 #include "../Header/Generator.hpp"
@@ -31,7 +31,7 @@ void Generator::border() {
 
 	for (auto path : workingFiles) {
 		Mat image = fs.loadImage(path);
-		cvtColor(image, image, CV_BGR2GRAY);
+		cvtColor(image, image, cv::COLOR_BGR2GRAY);
 
 		int borderSize = image.cols * 0.25;
 		Mat borderImage(image.cols + 2 * borderSize, image.rows + 2 * borderSize, image.type());
@@ -67,7 +67,7 @@ void Generator::scale(float scale) {
 
 	for (auto path : workingFiles) {
 		Mat image = fs.loadImage(path);
-		cvtColor(image, image, CV_BGR2GRAY);
+		cvtColor(image, image, cv::COLOR_BGR2GRAY);
 		Mat scaledImage;
 		Size scaled = image.size();
 
@@ -140,7 +140,7 @@ void Generator::rotate(int desiredFiles, float degree_step, float maxDegree) {
 
 
 			Mat image = fs.loadImage(path);
-			cvtColor(image, image, CV_BGR2GRAY);
+			cvtColor(image, image, cv::COLOR_BGR2GRAY);
 			Mat rotatedImage;
 			Point2f image_center(image.cols / 2.0F, image.rows / 2.0F);
 
@@ -215,7 +215,7 @@ void Generator::perspective(int desiredFiles, float step, float maxStep) {
 				}
 
 				Mat image = fs.loadImage(path);
-				cvtColor(image, image, CV_BGR2GRAY);
+				cvtColor(image, image, cv::COLOR_BGR2GRAY);
 				Point2f topLeft(0, 0);
 				Point2f topRight(image.cols - 1, 0);
 				Point2f bottomLeft(0, image.rows - 1);
