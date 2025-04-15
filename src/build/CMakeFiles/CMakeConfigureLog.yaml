@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.0-preview-25127-07+c012996cf for .NET Framework
-      Build started 15-04-2025 12:41:56.
+      Build started 15-04-2025 13:19:42.
       
       Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\4.0.1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -62,7 +62,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.48
+      Time Elapsed 00:00:01.85
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -88,7 +88,7 @@ events:
       The output was:
       0
       MSBuild version 17.14.0-preview-25127-07+c012996cf for .NET Framework
-      Build started 15-04-2025 12:41:58.
+      Build started 15-04-2025 13:19:45.
       
       Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\4.0.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -126,7 +126,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.42
+      Time Elapsed 00:00:01.64
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -145,8 +145,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-zuvxds"
-      binary: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-zuvxds"
+      source: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-m0fi99"
+      binary: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-m0fi99"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -155,49 +155,49 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-zuvxds'
+        Change Dir: 'C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-m0fi99'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f7075.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1ce96.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.0-preview-25127-07+c012996cf for .NET Framework
-        Build started 15-04-2025 12:42:00.
+        Build started 15-04-2025 13:19:47.
         
-        Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\cmTC_f7075.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\cmTC_1ce96.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_f7075.dir\\Debug\\".
+          Creating directory "cmTC_1ce96.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\Debug\\".
-          Creating directory "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\".
+          Creating directory "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\Debug\\".
+          Creating directory "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\unsuccessfulbuild".
+          Creating "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f7075.dir\\Debug\\\\" /Fd"cmTC_f7075.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ce96.dir\\Debug\\\\" /Fd"cmTC_1ce96.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.34918.1 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f7075.dir\\Debug\\\\" /Fd"cmTC_f7075.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
+          cl /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ce96.dir\\Debug\\\\" /Fd"cmTC_1ce96.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\Debug\\cmTC_f7075.exe" /INCREMENTAL /ILK:"cmTC_f7075.dir\\Debug\\cmTC_f7075.ilk" /NOLOGO /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-zuvxds/Debug/cmTC_f7075.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-zuvxds/Debug/cmTC_f7075.lib" /MACHINE:X64  /machine:x64 cmTC_f7075.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_f7075.vcxproj -> C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\Debug\\cmTC_f7075.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\Debug\\cmTC_1ce96.exe" /INCREMENTAL /ILK:"cmTC_1ce96.dir\\Debug\\cmTC_1ce96.ilk" /NOLOGO /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-m0fi99/Debug/cmTC_1ce96.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-m0fi99/Debug/cmTC_1ce96.lib" /MACHINE:X64  /machine:x64 cmTC_1ce96.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_1ce96.vcxproj -> C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\Debug\\cmTC_1ce96.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\Debug\\cmTC_f7075.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\cmTC_f7075.write.1u.tlog" "cmTC_f7075.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\Debug\\cmTC_1ce96.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\cmTC_1ce96.write.1u.tlog" "cmTC_1ce96.dir\\Debug\\vcpkg.applocal.log"
           'pwsh.exe' is not recognized as an internal or external command,
           operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\Debug\\cmTC_f7075.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\cmTC_f7075.write.1u.tlog" "cmTC_f7075.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\Debug\\cmTC_f7075.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\cmTC_f7075.write.1u.tlog" "cmTC_f7075.dir\\Debug\\vcpkg.applocal.log"
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\Debug\\cmTC_1ce96.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\cmTC_1ce96.write.1u.tlog" "cmTC_1ce96.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\Debug\\cmTC_1ce96.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\cmTC_1ce96.write.1u.tlog" "cmTC_1ce96.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\unsuccessfulbuild".
-          Touching "cmTC_f7075.dir\\Debug\\cmTC_f7075.tlog\\cmTC_f7075.lastbuildstate".
-        Done Building Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuvxds\\cmTC_f7075.vcxproj" (default targets).
+          Deleting file "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\unsuccessfulbuild".
+          Touching "cmTC_1ce96.dir\\Debug\\cmTC_1ce96.tlog\\cmTC_1ce96.lastbuildstate".
+        Done Building Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m0fi99\\cmTC_1ce96.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.33
+        Time Elapsed 00:00:01.81
         
       exitCode: 0
   -
@@ -237,8 +237,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-wh61dc"
-      binary: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-wh61dc"
+      source: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-n9ywcs"
+      binary: "C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-n9ywcs"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -248,49 +248,49 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-wh61dc'
+        Change Dir: 'C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-n9ywcs'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c2ac2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Preview/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4a331.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.14.0-preview-25127-07+c012996cf for .NET Framework
-        Build started 15-04-2025 12:42:02.
+        Build started 15-04-2025 13:19:49.
         
-        Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\cmTC_c2ac2.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\cmTC_4a331.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c2ac2.dir\\Debug\\".
+          Creating directory "cmTC_4a331.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\Debug\\".
-          Creating directory "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\".
+          Creating directory "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\Debug\\".
+          Creating directory "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\unsuccessfulbuild".
+          Creating "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\unsuccessfulbuild".
         VcpkgTripletSelection:
           Using triplet "x64-windows" from "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\"
           Using normalized configuration "Debug"
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c2ac2.dir\\Debug\\\\" /Fd"cmTC_c2ac2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\CL.exe /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4a331.dir\\Debug\\\\" /Fd"cmTC_4a331.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.44.34918.1 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_c2ac2.dir\\Debug\\\\" /Fd"cmTC_c2ac2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /I"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4a331.dir\\Debug\\\\" /Fd"cmTC_4a331.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.0\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\Debug\\cmTC_c2ac2.exe" /INCREMENTAL /ILK:"cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.ilk" /NOLOGO /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-wh61dc/Debug/cmTC_c2ac2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-wh61dc/Debug/cmTC_c2ac2.lib" /MACHINE:X64  /machine:x64 cmTC_c2ac2.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_c2ac2.vcxproj -> C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\Debug\\cmTC_c2ac2.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Preview\\VC\\Tools\\MSVC\\14.44.34918\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\Debug\\cmTC_4a331.exe" /INCREMENTAL /ILK:"cmTC_4a331.dir\\Debug\\cmTC_4a331.ilk" /NOLOGO /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib" /LIBPATH:"C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\lib\\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-n9ywcs/Debug/cmTC_4a331.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/neelk/Documents/GitHub/QR-Code-Scanner/src/build/CMakeFiles/CMakeScratch/TryCompile-n9ywcs/Debug/cmTC_4a331.lib" /MACHINE:X64  /machine:x64 cmTC_4a331.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4a331.vcxproj -> C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\Debug\\cmTC_4a331.exe
         AppLocalFromInstalled:
-          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\Debug\\cmTC_c2ac2.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\cmTC_c2ac2.write.1u.tlog" "cmTC_c2ac2.dir\\Debug\\vcpkg.applocal.log"
+          pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\Debug\\cmTC_4a331.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\cmTC_4a331.write.1u.tlog" "cmTC_4a331.dir\\Debug\\vcpkg.applocal.log"
           'pwsh.exe' is not recognized as an internal or external command,
           operable program or batch file.
-          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\Debug\\cmTC_c2ac2.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\cmTC_c2ac2.write.1u.tlog" "cmTC_c2ac2.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
-          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\Debug\\cmTC_c2ac2.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\cmTC_c2ac2.write.1u.tlog" "cmTC_c2ac2.dir\\Debug\\vcpkg.applocal.log"
+          The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\Debug\\cmTC_4a331.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\cmTC_4a331.write.1u.tlog" "cmTC_4a331.dir\\Debug\\vcpkg.applocal.log"" exited with code 9009.
+          "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\scripts\\buildsystems\\msbuild\\applocal.ps1" "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\Debug\\cmTC_4a331.exe" "C:\\Users\\neelk\\Desktop\\LearningC++\\Something\\vcpkg\\installed\\x64-windows\\debug\\bin" "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\cmTC_4a331.write.1u.tlog" "cmTC_4a331.dir\\Debug\\vcpkg.applocal.log"
         FinalizeBuildStatus:
-          Deleting file "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c2ac2.dir\\Debug\\cmTC_c2ac2.tlog\\cmTC_c2ac2.lastbuildstate".
-        Done Building Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wh61dc\\cmTC_c2ac2.vcxproj" (default targets).
+          Deleting file "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\unsuccessfulbuild".
+          Touching "cmTC_4a331.dir\\Debug\\cmTC_4a331.tlog\\cmTC_4a331.lastbuildstate".
+        Done Building Project "C:\\Users\\neelk\\Documents\\GitHub\\QR-Code-Scanner\\src\\build\\CMakeFiles\\CMakeScratch\\TryCompile-n9ywcs\\cmTC_4a331.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.42
+        Time Elapsed 00:00:01.55
         
       exitCode: 0
   -
