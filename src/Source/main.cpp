@@ -1,7 +1,6 @@
 #include <iostream>
 #include <ctime>
 #include <opencv2/opencv.hpp>
-#include <opencv2/objdetect.hpp>
 #include "../Header/ImageBinarization.hpp"
 #include "../Header/Filesystem.hpp"
 #include "../Header/Generator.hpp"
@@ -20,57 +19,18 @@ void generateMode(const string &source, const string &dest);
 
 float evaluate(const string &source, const Mat &outputImage);
 
-void showQRCodeContentOnImage(const cv::Mat& image, const std::string& content) {
-    if (image.empty() || content.empty()) return;
-    cv::Mat display;
-    if (image.channels() == 1) {
-        cv::cvtColor(image, display, cv::COLOR_GRAY2BGR);
-    } else {
-        display = image.clone();
-    }
-    int fontFace = cv::FONT_HERSHEY_SIMPLEX;
-    double fontScale = 0.5;
-    int thickness = 1;
-    int baseline = 0;
-    cv::Size textSize = cv::getTextSize(content, fontFace, fontScale, thickness, &baseline);
-    cv::Point textOrg(5, textSize.height + 5);
-    cv::rectangle(display, textOrg + cv::Point(0, baseline),
-                  textOrg + cv::Point(textSize.width, -textSize.height),
-                  cv::Scalar(255,255,255), cv::FILLED);
-    cv::putText(display, content, textOrg, fontFace, fontScale, cv::Scalar(0,0,255), thickness, cv::LINE_AA);
-    cv::imshow("Extracted_QR_with_Content", display);
-}
-
-void printQRCodeContent(const cv::Mat& image) {
-    cv::QRCodeDetector qrDecoder;
-    std::string data = qrDecoder.detectAndDecode(image);
-    if (!data.empty()) {
-        std::cout << "QR Code Content: " << data << std::endl;
-        showQRCodeContentOnImage(image, data);
-    } else {
-        std::cout << "No QR code content detected." << std::endl;
-    }
-}
-
 void showExtractedWithContent(const std::vector<cv::Mat>& extracted) {
     cv::QRCodeDetector qrDecoder;
     for (int i = 0; i < extracted.size(); i++) {
         cv::Mat imgToShow = extracted[i].clone();
         std::string data = qrDecoder.detectAndDecode(imgToShow);
-        std::string displayText;
-        if (!data.empty()) {
-            displayText = data;
-        } else {
-            displayText = "Content not decodable";
-        }
-        // Draw the text below the image
+        std::string displayText = !data.empty() ? data : "Content not decodable";
         int fontFace = cv::FONT_HERSHEY_SIMPLEX;
         double fontScale = 0.7;
         int thickness = 2;
         int baseline = 0;
         cv::Size textSize = cv::getTextSize(displayText, fontFace, fontScale, thickness, &baseline);
         int y = imgToShow.rows - 10;
-        // Draw a filled rectangle for better contrast
         cv::rectangle(imgToShow, cv::Point(0, y - textSize.height - 10), cv::Point(imgToShow.cols, y + baseline + 10), cv::Scalar(255,255,255), cv::FILLED);
         cv::putText(imgToShow, displayText, cv::Point(10, y), fontFace, fontScale, cv::Scalar(0,0,255), thickness, cv::LINE_AA);
         cv::imshow(std::string("Extracted_") + std::to_string(i), imgToShow);
@@ -178,9 +138,6 @@ void cameraMode() {
 		CodeFinder codeFinder(frame, false);
 		Mat outputImage = codeFinder.find();
 
-		// Print QR code content if found
-		printQRCodeContent(outputImage);
-
 		vector<Mat> merged = codeFinder.drawMergedLinesAndIntersections();
 		for (int i = 0; i < merged.size(); i++) {
 			imshow(string("Merged Lines And Intersections_") + to_string(i), merged[i]);
@@ -227,9 +184,6 @@ void folderMode(const string &source) {
 			Mat image = fs.loadImage(imageFiles[i]);
 			CodeFinder codeFinder(image, false);
 			Mat outputImage = codeFinder.find();
-
-			 // Print QR code content if found
-			printQRCodeContent(outputImage);
 
 			// Code for debugging and evaluating.
 			if (outputImage.size().width != 1)
@@ -281,9 +235,6 @@ void evaluationMode(const string &source, const string &dest) {
 
 	CodeFinder codeFinder(inputImage, true);
 	Mat outputImage = codeFinder.find();
-
-	// Print QR code content if found
-	printQRCodeContent(outputImage);
 
 	vector<Mat> extracted = codeFinder.drawExtractedCodes();
 	showExtractedWithContent(extracted);
@@ -343,7 +294,7 @@ float evaluate(const string &source, const Mat &outputImage) {
 	try
 	{
 		groundTruthImage = FileSystem::loadImage(groundTruthImagePath);
-		cvtColor(groundTruthImage, groundTruthImage, cv::COLOR_BGR2GRAY);
+		cv::cvtColor(groundTruthImage, groundTruthImage, cv::COLOR_BGR2GRAY);
 	}
 	catch (...)
 	{
